@@ -16,21 +16,25 @@
   </div>  
   
   
-  <form>
+  <form action="" data-abide>
   <div class="row">
     <div class="large-6 columns">
+    
       <label>Name
-        <input type="text" placeholder="Enter Your Name" />
+        <input type="text" placeholder="Enter Your Name" required data-invalid>
+        <small class="error">Required</small>
       </label>
       
       
     </div>
   </div>
+ 
   
   <div class="row">
     <div class="large-6 columns">
       <label>Student ID Number
-        <input type="text" placeholder="00000000" />
+        <input type="text" placeholder="00000000" required data-invalid>
+        <small class="error">Required</small>
       </label>
     </div>
     </div>
@@ -56,8 +60,12 @@
         <label>Graduation Date
           <input type="date" placeholder="June 14, 2014" />
         </label>
+        
+        <input type="submit" value="Submit" />
      </div>   
      </div>
+      
+   
       
       </div>
     </div>
